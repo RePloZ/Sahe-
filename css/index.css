@@ -68,6 +68,9 @@ h4 +p{
     opacity: 0.75;
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
 .bibli h4{
     margin-left: 0;
 }
