@@ -12,21 +12,37 @@
 <body>
 <header>
    <div class="connect">Connection</div>
-    <div class="inscription">Inscription</div>
-    <h1>8GAG</h1>
-    <p>Site d'hébergement d'images en ligne</p>
+    <div class="inscription"><input type="submit" ></div>
+    
+    <p><strong>8GAG</strong>,site d'hébergement d'images en ligne</p>
     
 </header>
 
  <div class="env">
      <h4>Envoyer vos images</h4>
-    <form action="">
-        <input type="file">
+     <p>Formats autorisés: PNG, JPEG 
+       (max 20Mo)</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file"  name="pic" accept="image/*"><br><br>
+        <label for="titre">Titre du fichier (max. 50 caractères) :</label><br />
+     <input type="text" name="titre"  id="titre" /><br/> <br>
+       <label for="description">Description de votre fichier (max. 255 caractères) :</label><br />
+        <textarea name="description" id="description"></textarea><br />
+
+        <input type="submit">
     </form>
     </div>
-    <div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga officiis, laborum architecto blanditiis voluptate alias molestiae repudiandae ex deleniti consectetur facilis praesentium nostrum aliquid illum temporibus error natus at sint!</p>
-        <p>Envoyer vos images</p>
+    
+    <div class="bibli">
+        <h4>Votre bibliothèque d'images</h4>
+        
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
     </div>
+    
 </body>
 </html>
