@@ -1,6 +1,10 @@
 body{
     font-family: sans-serif;
+<<<<<<< HEAD
     background-image: url(../img/fd.png);
+=======
+    background-image: url(new_year_background.png);
+>>>>>>> master
 }
 .connect{
     float: right;
