@@ -1,0 +1,44 @@
+body{
+    font-family: sans-serif;
+    background-image: url(../img/fd.png);
+}
+.connect{
+    float: right;
+    border: 3px #d991d7 solid;
+    border-radius: 20px;
+    padding-top: 0;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.inscription{
+    float: right;
+    border: 3px #d991d7 solid;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 5px;
+}
+h1{
+    margin-left: 30px;
+    font-size: 40px;
+    width: 120px;
+    color: #d991d7
+}
+h1 +p{
+    margin-left: 5px;
+    font-size: 16px;
+}
+header{
+    background-color: #c6c4c1;
+    padding: 1px;
+    margin: 0;
+    opacity: 0.75;
+}
+.env{
+    height: 200px;
+    margin-top: 0px;
+    background-color: #c6c4c1;
+    opacity: 0.75;
+    
+}
