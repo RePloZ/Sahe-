@@ -1,0 +1,84 @@
+body{
+	background-image: url(../img/new_year_background.png);
+	text-align: center;
+
+}
+
+h1{
+	text-align: center;
+	text-decoration: overline;
+}
+ #photo1{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background: 
+	
+	
+		
+}
+#photo2{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background: 
+	
+}
+#photo3{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+
+#photo4{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+#photo5{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+#photo6{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+#photo7{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+#photo8{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+#photo9{
+	height: 300px;
+	width: 32%;
+	background:black;
+	display: inline-block;
+	background:
+}
+.bvalid{
+	position: absolute;
+    right: 0px;
+    width: 300px;
+	
+}
