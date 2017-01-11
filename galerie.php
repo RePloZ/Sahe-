@@ -26,7 +26,9 @@ $page = $gal/5;
 </div>
 <div id="photo3">
 </div>
-<div id="photo4"></div>
+<div id="photo4">
+	
+</div>
 <div id="photo5"></div>
 <div id=photo6></div>
 <div id="photo7"></div>
