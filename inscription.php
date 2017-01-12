@@ -49,7 +49,7 @@ if (!empty($_POST)) {
     <fieldset>
         <legend>Vos coordonnées</legend>
         <br>
-        <label for="nom">Nom:</label><b ,r>
+        <label for="nom">Nom:</label><br>
         <input type="text" name="name" id="nom"/>*
         <br><br>
 
