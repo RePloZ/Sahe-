@@ -2,18 +2,15 @@
 require('connect.php');
 
 //Coder mot de passe
+if (isset($_POST['password'])){
+    $password = $_POST['password'];
+    $hash = crypt($password, '$82$28$chatchienlion$');
+}
 
 if (!empty($_POST)) {
     $requete = $dbh->prepare('INSERT INTO user VALUES(NULL,
       :name, :password, :email, :prenom, :sexe,:tel, :anniversaire, :codepostal, :pays, :ville, :fixe, :adresse)');
-    var_dump($_POST);
 
-    /*echo 'INSERT INTO user VALUES(NULL,
-      "'.$_POST['name'].'", "'.$_POST['password'].'", "'.$_POST['email'].'", "'.$_POST['prenom'].'", 
-      "'.$_POST['sexe'].'","'.$_POST['tel'].'", "'.$_POST['anniversaire'].'", "'.$_POST['codepostal'].'", "'.$_POST['pays'].'", 
-      "'.$_POST['ville'].'", "'.$_POST['fixe'].'", "'.$_POST['adresse'].'")';
-*/
-  //  var_dump($dbh->errorInfo());
     $a = $requete->execute([
         ':name' => $_POST['name'],
         ':password' => $_POST['password'],
@@ -28,7 +25,6 @@ if (!empty($_POST)) {
         ':fixe'=>$_POST['fixe'],
         ':codepostal'=>$_POST['codepostal']
     ]);
-    //var_dump($a);
 }
 
 ?>
@@ -106,6 +102,6 @@ if (!empty($_POST)) {
 </form>
 
 <br>
-<a href="index.html"><input type="button" value="Retour à la page d'accueil"></a>
+<a href="index.html"><input class="inscription" type="button" value="Retour à la page d'accueil"></a>
 </body>
 </html>

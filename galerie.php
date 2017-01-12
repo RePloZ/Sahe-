@@ -17,12 +17,14 @@ function get_page_images($page, $nb_resultats)
     $req->bindParam(':fin', $fin, PDO::PARAM_INT);
     $req->execute();
     $images = $req->fetchAll();
+    var_dump($debut, ' ', $fin);
     global $dbh;
     $req = $dbh->prepare('SELECT COUNT(*) as count FROM image');
     $req->execute();
     $count = $req->fetch()['count'];
 
     $max = intval($count) / $_SESSION['nb_max'];
+    var_dump($max);
     if ($max<=$debut) {
         echo 'Aucune image disponible';
     }
@@ -54,17 +56,11 @@ if ($page <= 0) {
 
 </head>
 <body>
-<header>
-    <div class="connect"><a href="connection.html">Connection</a></div>
-    <div class="inscription"><a href="inscription.html">Inscription</a></div>
-
-    <p><a href="index.html"><strong>8GAG</strong></a>   ,site d'hébergement d'images en ligne</p>
-
-</header>
-<h1>Bibliothèque D'images</h1>
+<h1>Bibliothèque D'Images</h1>
 
 <p>Nombre d'image par page :</p>
 <form action="" method="post">
+    <?php var_dump($_SESSION); ?>
     <select class="form-control" name="resultats">
         <option value="10" <?= ($_SESSION['nb_max'] == '10') ? 'selected' : '' ?>>10</option>
         <option value="15" <?= ($_SESSION['nb_max'] == '15') ? 'selected' : '' ?>>15</option>
