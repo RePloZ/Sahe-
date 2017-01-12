@@ -11,7 +11,6 @@ try {
 } catch (PDOException $e) {
     echo 'Connexion échouée : ' . $e->getMessage();
 }
-
 //Trier les images
 $trier = $dbh->prepare('
     SELECT * 
