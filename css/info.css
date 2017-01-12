@@ -1,0 +1,29 @@
+body{
+	
+text-align: center;
+background-image: url(../img/fd.png);
+font-family: fantasy;
+}
+h1{
+	text-align: center;
+	text-decoration: overline;
+}
+#img{
+	height: 500px;
+	width: 35%;
+	background:#d0d0d0;
+	display: inline-block;
+}
+#info{
+	height: 500px;
+	width: 30%;
+	background:#d0d0d0;
+	display: inline-block;
+	vertical-align: top;
+		
+}
+li{
+	color: black;
+	text-align: center;
+	
+}
