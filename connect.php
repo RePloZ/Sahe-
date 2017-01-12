@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-<?php
-session_start();
-ini_set('display_errors',1);
-ini_set('error_reporting',E_ALL);
-/* Connexion à une base ODBC avec l'invocation de pilote */
-$dsn = 'mysql:dbname=8gag;host=127.0.0.1';
-$user = 'root';
-$password = '';
-try {
-    $dbh = new PDO($dsn, $user, $password);
-} catch (PDOException $e) {
-    echo 'Connexion échouée : ' . $e->getMessage();
-}
-=======
 <?php
 session_start();
 ini_set('display_errors', 1);
@@ -26,7 +11,6 @@ try {
 } catch (PDOException $e) {
     echo 'Connexion échouée : ' . $e->getMessage();
 }
-
 //Trier les images
 $trier = $dbh->prepare('
     SELECT * 
@@ -34,4 +18,3 @@ $trier = $dbh->prepare('
     ORDER BY date
 ');
 $trier->execute([]);
->>>>>>> master
