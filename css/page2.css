@@ -13,12 +13,14 @@ header{
 h1{
 	text-align: center;
 	text-decoration: overline;
+	opacity: 0.75;
 }
  #photo1{
 	height: 300px;
 	width: 300px;
 	background:#d0d0d0;
 	margin: auto;
+	opacity: 0.75;
 	 
 }
 .connect{

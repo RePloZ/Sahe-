@@ -32,8 +32,10 @@ h1{
 }
 li{
 	color: black;
-	text-align: center;
-	
+	display:block;
+}
+ul{
+	text-align: left;
 }
 .connect{
     float: right;
