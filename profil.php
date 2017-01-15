@@ -9,7 +9,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/conn.css">
+    <link rel="stylesheet" href="css/profil.css">
 </head>
 <body>
 <header>
@@ -22,11 +22,16 @@
 </div>
 <div id="info">
     <ul>
-        <li>Nom :</li>
+        <li>Nom:</li>
         <li>Prénom:</li>
+        <li>sexe:</li>
         <li>Adresse:</li>
-        <li>:</li>
-
+        <li>Code Postal:</li>
+        <li>Ville:</li>
+        <li>Pays:</li>
+        <li>date de naissance:</li>
+        <li>Portable:</li>
+        <li>E-mail:</li>
     </ul>
 </div>
 
