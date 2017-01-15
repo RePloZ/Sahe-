@@ -11,10 +11,7 @@ try {
 } catch (PDOException $e) {
     echo 'Connexion échouée : ' . $e->getMessage();
 }
-//Trier les images
-$trier = $dbh->prepare('
-    SELECT * 
-    FROM image
-    ORDER BY date
-');
-$trier->execute([]);
+if (!isset($_SESSION['connected'])){
+    $_SESSION=array(
+        'connected' => false,
+    );}
