@@ -57,7 +57,6 @@ function get_cinq_last()
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="index.css">
 	<title>Page d'accueil </title>
 </head>
 <body>
@@ -74,64 +73,10 @@ function get_cinq_last()
     <?php } ?>
 	<p><a href="index.php"><strong>8GAG</strong></a> site d'hébergement d'images en ligne</p>
 </header>
-
-< class="env">
+<div class="env">
 	<h4>Envoyer vos images</h4>
 	<p>Formats autorisés: PNG, JPEG
 		(max 20Mo)</p>
-
-<body>
-<header>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-				        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.php">8GAG</a>
-			</div>
-
-			<div class="collapse navbar-collapse">
-				<div class="nav navbar-nav">
-                    <?php
-                    if ($_SESSION['connected'] == false) {
-                        ?>
-						<ul class="nav navbar-nav">
-							<li><a href="connection.php">
-									<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
-									Login
-								</a></li>
-							<li><a href="inscription.php">
-									<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
-									S'inscrire
-								</a></li>
-						</ul>
-                    <?php } else { ?>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-							   aria-haspopup="true"
-							   aria-expanded="false"> Bienvenue <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="profil.php">Mon profil</a></li>
-								<li><a href="logout.php">Se déconnecter</a></li>
-							</ul>
-						</li>
-                    <?php } ?>
-					<p class="navbar-text">Site d'hebergement d'images en ligne.</p>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
-</header>
-
-<div class="container-fluid">
-	<h4>Envoyer vos images</h4>
-	<p>Formats autorisés : PNG, JPEG, (max 20Mo)</p>
 	<form action="" method="post" enctype="multipart/form-data">
 		<input type="file" name="image" accept="image/*"><br><br>
 		<label for="titre">Titre du fichier (max. 50 caractères) :</label><br/>
@@ -145,7 +90,7 @@ function get_cinq_last()
 	<h4>Les Cinq Dernières Images :</h4>
     <?php
     $images = get_cinq_last();
-    for ($i=0; $i<5; $i++) { ?>
+    for ($i = 0; $i < 5; $i++) { ?>
 		<a href="info.php?nom=<?= $images[$i]['name'] ?>">
 			<img src="<?= $images[$i]['link'] ?>" alt="" class="image">
 		</a>
@@ -153,27 +98,5 @@ function get_cinq_last()
 	<br>
 	<a href="galerie.php">Voir Toutes la bibliothèque d'image</a>
 </div>
-<div>
-	<h4>Les cinq dernières images</h4>
-</div>
-<div class="row">
-    <?php
-    $images = get_cinq_last();
-    for ($i = 0; $i < 5; $i++) { ?>
-		<div class="col-xs-6 col-md-3">
-			<a href="info.php?nom=<?= $images[$i]['name'] ?>" alt="<?= $images[$i]['name']?>" class="thumbnail">
-				<img src="<?= $images[$i]['link'] ?>" alt="<?= $images[$i]['name'] ?>">
-			</a>
-		</div>
-    <?php } ?>
-	<a href="galerie.php">
-		<p>Voir Toute la bibliothèque d'image</p>
-	</a>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
 </body>
 </html>
