@@ -23,9 +23,8 @@ if (!empty($_POST)) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<<<<<<< HEAD
+	<html lang="en">
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
@@ -49,7 +48,6 @@ if (!empty($_POST)) {
 <p class="compte">Vous n'avez pas de compte? <br>
     Inscrivez-vous <a href="inscription.php">ICI</a></p>
 <a href="index.php"><input class="inscription" type="button" value="Retour à la page d'accueil"></a>
-=======
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/index.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -142,6 +140,5 @@ if (!empty($_POST)) {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
->>>>>>> origin/master
 </body>
 </html>

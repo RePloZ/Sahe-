@@ -50,17 +50,12 @@ function get_cinq_last()
     return $images;
 } ?>
 <!doctype html>
-<<<<<<< HEAD
-<html lang="en">
-=======
 <html lang="fr">
->>>>>>> origin/master
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="index.css">
 	<title>Page d'accueil </title>
@@ -80,18 +75,11 @@ function get_cinq_last()
 	<p><a href="index.php"><strong>8GAG</strong></a> site d'hébergement d'images en ligne</p>
 </header>
 
-<div class="env">
+< class="env">
 	<h4>Envoyer vos images</h4>
 	<p>Formats autorisés: PNG, JPEG
 		(max 20Mo)</p>
-=======
-	<link rel="stylesheet" href="index.css">
-	<title>Page d'accueil</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-</head>
 <body>
 <header>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -144,7 +132,6 @@ function get_cinq_last()
 <div class="container-fluid">
 	<h4>Envoyer vos images</h4>
 	<p>Formats autorisés : PNG, JPEG, (max 20Mo)</p>
->>>>>>> origin/master
 	<form action="" method="post" enctype="multipart/form-data">
 		<input type="file" name="image" accept="image/*"><br><br>
 		<label for="titre">Titre du fichier (max. 50 caractères) :</label><br/>
@@ -154,8 +141,6 @@ function get_cinq_last()
 		<input type="submit">
 	</form>
 </div>
-<<<<<<< HEAD
-
 <div class="bibli">
 	<h4>Les Cinq Dernières Images :</h4>
     <?php
@@ -168,7 +153,6 @@ function get_cinq_last()
 	<br>
 	<a href="galerie.php">Voir Toutes la bibliothèque d'image</a>
 </div>
-=======
 <div>
 	<h4>Les cinq dernières images</h4>
 </div>
@@ -191,6 +175,5 @@ function get_cinq_last()
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
->>>>>>> origin/master
 </body>
 </html>
