@@ -9,7 +9,6 @@ function get_page_images($page, $nb_resultats)
     global $dbh;
     $fin = intval($page) * intval($nb_resultats);
     $debut = $fin - intval($nb_resultats) + 1;
-
     $req = $dbh->prepare('SELECT link, name FROM image LIMIT :debut, :fin');
     $req->bindParam(':debut', $debut, PDO::PARAM_INT);
     $req->bindParam(':fin', $fin, PDO::PARAM_INT);
@@ -25,7 +24,6 @@ function get_page_images($page, $nb_resultats)
     }
     return $images;
 }
-
 if (!empty($_GET['page'])) {
     $page = intval($_GET['page']);
     $precedent = $page - 1;
@@ -108,5 +106,3 @@ if ($page <= 0) {
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-
